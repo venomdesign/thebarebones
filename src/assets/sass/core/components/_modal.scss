@@ -27,6 +27,7 @@
 	// Headings
 	h1,h2,h3,h4,h5,h6 {
 		margin-bottom: 0;
+		font-family: 'PT Sans', Arial, Helvetica, sans-serif;
 	}
 }
 
@@ -40,6 +41,7 @@
 
 // Modal footer
 .modal-footer {
+	text-align: center;
 	background-color: var(--kt-modal-footer-bg);
 	border-top: $modal-footer-border-width solid var(--#{$prefix}modal-footer-border-color);
 }

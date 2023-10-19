@@ -35,10 +35,10 @@
                 }
 
                 @include menu-link-default-state( 
-                    $title-color: #9D9DA6, 
-                    $icon-color:#C5C5D8, 
+                    $title-color: #fff, 
+                    $icon-color:#fff, 
                     $bullet-color:#787887, 
-                    $arrow-color: #787887, 
+                    $arrow-color: #fff, 
                     $bg-color: null  
                 );
                 

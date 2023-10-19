@@ -8,30 +8,28 @@
     data-kt-menu-expand="false">
     <!-- Dashboard -->
     <div class="menu-item">
-      <a class="menu-link without-sub" routerLink="/dashboard" routerLinkActive="active"><span class="menu-icon">
-          <span [inlineSVG]="'./assets/media/icons/duotune/general/gen025.svg'" class="svg-icon svg-icon-2"></span>
-        </span>
-        <span class="menu-title" translate="MENU.DASHBOARD"></span></a>
+      <a class="menu-link without-sub" routerLink="/dashboard" routerLinkActive="active">
+        <span class="menu-icon"><i class="fa fa-search"></i></span>
+        <span class="menu-title" translate="MENU.SEARCH"></span></a>
     </div>
 
     <!-- Layout builder -->
-    <div class="menu-item">
+    <!-- <div class="menu-item">
       <a class="menu-link without-sub" routerLink="/builder" routerLinkActive="active"><span class="menu-icon">
           <span [inlineSVG]="'./assets/media/icons/duotune/general/gen019.svg'" class="svg-icon svg-icon-2"></span>
         </span><span class="menu-title">Layout Builder</span></a>
-    </div>
+    </div> -->
     <!-- Separator -->
-    <div class="menu-item">
+    <!-- <div class="menu-item">
       <div class="menu-content pt-8 pb-2">
         <span class="menu-section text-muted text-uppercase fs-8 ls-1">Crafted</span>
       </div>
-    </div>
+    </div> -->
 
     <!-- Pages -->
     <div class="menu-item menu-accordion" data-kt-menu-trigger="click" routerLinkActive="here show">
-      <span class="menu-link"><span class="menu-icon"><span class="svg-icon svg-icon-2"
-            [inlineSVG]="'./assets/media/icons/duotune/general/gen022.svg'"></span></span><span
-          class="menu-title">Pages</span><span class="menu-arrow"></span></span>
+      <span class="menu-link"><span class="menu-icon"><i class="fa-solid fa-chart-pie"></i></span><span
+          class="menu-title">Dashboards</span><span class="menu-arrow"></span></span>
       <div class="menu-sub menu-sub-accordion" routerLinkActive="menu-active-bg">
         <div class="menu-item menu-accordion" routerLinkActive="here show" data-kt-menu-trigger="click">
           <span class="menu-link"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
@@ -87,9 +85,8 @@
 
     <!-- Accounts -->
     <div class="menu-item menu-accordion" data-kt-menu-trigger="click" routerLinkActive="here show">
-      <span class="menu-link"><span class="menu-icon"><span class="svg-icon svg-icon-2"
-            [inlineSVG]="'./assets/media/icons/duotune/communication/com006.svg'"></span></span><span class="menu-title"
-          data-link="/crafted/account">Accounts</span><span class="menu-arrow"></span></span>
+      <span class="menu-link"><span class="menu-icon"><i class="bi bi-folder2-open"></i></span><span class="menu-title"
+          data-link="/crafted/account">Case Details</span><span class="menu-arrow"></span></span>
       <div class="menu-sub menu-sub-accordion" routerLinkActive="menu-active-bg">
         <div class="menu-item">
           <a class="menu-link without-sub" routerLinkActive="active" routerLink="/crafted/account/overview"><span
@@ -106,9 +103,8 @@
 
     <!-- Errors -->
     <div class="menu-item menu-accordion" data-kt-menu-trigger="click" routerLinkActive="here show">
-      <span class="menu-link"><span class="menu-icon"><span class="svg-icon svg-icon-2"
-            [inlineSVG]="'./assets/media/icons/duotune/general/gen040.svg'"></span></span><span class="menu-title"
-          data-link="/error">Errors</span><span class="menu-arrow"></span></span>
+      <span class="menu-link"><span class="menu-icon"><i class="bi bi-person-circle"></i></span><span class="menu-title"
+          data-link="/error">Person Details</span><span class="menu-arrow"></span></span>
       <div class="menu-sub menu-sub-accordion" routerLinkActive="menu-active-bg">
         <div class="menu-item">
           <a class="menu-link without-sub" routerLink="/error/404" routerLinkActive="active"><span
@@ -163,14 +159,14 @@
     </div>
 
     <!-- Separator -->
-    <div class="menu-item">
+    <!-- <div class="menu-item">
       <div class="menu-content pt-8 pb-2">
         <span class="menu-section text-muted text-uppercase fs-8 ls-1">Apps</span>
       </div>
-    </div>
+    </div> -->
 
     <!-- Chat -->
-    <div class="menu-item menu-accordion" data-kt-menu-trigger="click" routerLinkActive="here show">
+    <!-- <div class="menu-item menu-accordion" data-kt-menu-trigger="click" routerLinkActive="here show">
       <span class="menu-link"><span class="menu-icon"><span class="svg-icon svg-icon-2"
             [inlineSVG]="'./assets/media/icons/duotune/communication/com012.svg'"></span></span><span class="menu-title"
           data-link="/apps/chat">Chat</span><span class="menu-arrow"></span></span>
@@ -191,7 +187,7 @@
               Chart</span></a>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
   </div>

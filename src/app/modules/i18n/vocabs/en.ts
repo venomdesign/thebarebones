@@ -13,6 +13,29 @@ export const locale = {
       FEATURES: 'Features',
       APPS: 'Apps',
       DASHBOARD: 'Dashboard',
+      SEARCH: 'Search'
+    },
+    BUTTON: {
+      NEW: 'new',
+      ACTIONS: 'Actions',
+      CREATE_POST: 'Create New Post',
+      PAGES: 'Pages',
+      FEATURES: 'Features',
+      APPS: 'Apps',
+      DASHBOARD: 'Dashboard',
+      SEARCH: 'Search'
+    },
+    MODAL: {
+      ADDPERSON: {
+        TITLE: 'Add Person',
+      },
+      ACTIONS: 'Actions',
+      CREATE_POST: 'Create New Post',
+      PAGES: 'Pages',
+      FEATURES: 'Features',
+      APPS: 'Apps',
+      DASHBOARD: 'Dashboard',
+      SEARCH: 'Search'
     },
     AUTH: {
       GENERAL: {

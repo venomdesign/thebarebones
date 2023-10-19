@@ -1,7 +1,7 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { LayoutService } from '../../../core/layout.service';
-
+import { ModalComponent, ModalConfig, ModalsModule, WidgetsModule } from '../../../../../_metronic/partials';
 @Component({
   selector: 'app-classic',
   templateUrl: './classic.component.html',
@@ -23,7 +23,12 @@ export class ClassicComponent implements OnInit, OnDestroy {
   secondaryButtonClass: string = '';
   filterButtonClass: string = '';
   daterangepickerButtonClass: string = '';
-
+  modalConfig: ModalConfig = {
+    modalTitle: 'Modal title',
+    dismissButtonLabel: 'Submit',
+    closeButtonLabel: 'Cancel'
+  };
+  @ViewChild('modal') private modalComponent: ModalComponent;
   constructor(private layout: LayoutService) {}
 
   ngOnInit(): void {
@@ -81,7 +86,9 @@ export class ClassicComponent implements OnInit, OnDestroy {
       ? 'btn-light'
       : 'bg-body btn-color-gray-700 btn-active-color-primary';
   }
-
+  async openModal() {
+    return await this.modalComponent.open();
+  }
   ngOnDestroy() {
     this.unsubscribe.forEach((sb) => sb.unsubscribe());
   }
